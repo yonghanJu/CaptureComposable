@@ -34,9 +34,10 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
-        compose true
+        compose = true
     }
     composeOptions {
+        kotlinCompilerVersion = '1.2.0'
         kotlinCompilerExtensionVersion '1.2.0'
     }
     packagingOptions {
@@ -44,10 +45,10 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
-    namespace 'com.yonghanJu.capturecomposable'
 }
 
 dependencies {
+    implementation project(":capture")
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
@@ -63,6 +64,6 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_ui_version"
 
     // Compose
-    implementation "androidx.compose.runtime:runtime:1.4.3"
-    implementation "androidx.compose.ui:ui-graphics:1.4.3"
+    implementation "androidx.compose.runtime:runtime:1.2.0"
+    implementation "androidx.compose.ui:ui-graphics:1.2.0"
 }
