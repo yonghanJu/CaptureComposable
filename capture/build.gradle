@@ -1,23 +1,18 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
 
 android {
-    namespace 'com.konkuk.caputrecomposable'
+    namespace 'com.konkuk.capture'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.konkuk.caputrecomposable"
         minSdk 21
         targetSdk 33
-        versionCode 1
-        versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary true
-        }
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -40,15 +35,9 @@ android {
         kotlinCompilerVersion = '1.2.0'
         kotlinCompilerExtensionVersion '1.2.0'
     }
-    packagingOptions {
-        resources {
-            excludes += '/META-INF/{AL2.0,LGPL2.1}'
-        }
-    }
 }
 
 dependencies {
-    implementation project(":capture")
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
@@ -67,3 +56,5 @@ dependencies {
     implementation "androidx.compose.runtime:runtime:1.2.0"
     implementation "androidx.compose.ui:ui-graphics:1.2.0"
 }
+
+group = "com.github.yonghanJu"
