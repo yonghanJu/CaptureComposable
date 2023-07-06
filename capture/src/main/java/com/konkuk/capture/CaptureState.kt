@@ -14,7 +14,7 @@ import androidx.compose.ui.graphics.asImageBitmap
  */
 class CaptureState internal constructor() {
 
-    val captureState = mutableStateOf<CaptureResult>(CaptureResult.Initialized)
+    val state = mutableStateOf<CaptureResult>(CaptureResult.Initialized)
 
     val bitmapState = mutableStateOf<Bitmap?>(null)
 
