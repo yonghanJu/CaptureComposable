@@ -1,10 +1,10 @@
 # CaptureComposable
 
-[Yong's Blog 개발 일지 보러가기]
+[Yong's Blog Dev Dialog]
 
 [![](https://jitpack.io/v/yonghanJu/CaptureComposable.svg)](https://jitpack.io/#yonghanJu/CaptureComposable)
 
-[Yong's Blog 개발 일지 보러가기]: https://yonghanju.github.io/android/2023/07/06/Compose%EB%A1%9C-%EC%A1%B8%ED%94%84%EB%A7%8C%EB%93%A4%EA%B8%B0(4).html
+[Yong's Blog Dev Dialog]: https://yonghanju.github.io/android/2023/07/06/Compose%EB%A1%9C-%EC%A1%B8%ED%94%84%EB%A7%8C%EB%93%A4%EA%B8%B0(4).html
 
 Library for __capturing Composable components__
 
